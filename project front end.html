@@ -1,0 +1,65 @@
+<DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UV-compartible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Photography </title>
+    <link rel="stylesheet" href="pstyle.css">
+ </head>
+
+ <body>
+    <header>
+        
+        <nav class="navigation">
+         <a href="#">click here for Magic</a>
+            <a href = "project front end.html" class="active">Home</a>
+            <a href = "index.html">Intro</a>
+            <a href = "gallery.html">Gallery</a>
+            <a href = "blog.html">About</a>
+            <a href = "contact.html">Contact</a>
+           
+         </nav>
+    </header> 
+    <section class="parallax">
+      <img src="hill1.png" id="hill1">
+      <img src="hill2.png" id="hill2">
+      <img src="hill3.png" id="hill3">
+      <img src="hill4.png" id="hill4">
+      <img src="hill5.png" id="hill5">
+      <img src="tree.png" id="tree">
+      <h2 id="text">Photography website</h2>
+      <img src="leaf.png" id="leaf">
+      <img src="plant.png" id="plant">
+    </section>
+
+    <section class="sec">
+     <h2>Photography World</h2>
+     <p>
+      Photography is the art and science of capturing images using light. It serves as a powerful medium for expression, allowing us to freeze moments in time and convey emotions through visual storytelling. From stunning landscapes to intimate portraits, photography encompasses various genres, each offering unique perspectives and techniques. With advancements in technology and the widespread use of smartphones, photography has become more accessible, empowering countless individuals to explore their creativity. Whether for artistic purposes or personal memories, photography enriches our understanding of the world around us.
+     </p>
+   </section>
+
+         <script>
+            let text = document.getElementById('text');
+let leaf = document.getElementById('leaf');
+let hill1 = document.getElementById('hill1');
+let hill4 = document.getElementById('hill4');
+let hill5 = document.getElementById('hill5');
+
+window.addEventListener('scroll',() => {
+     let value = window.scrollY;
+
+   text.style.marginTop = value * 2.5 + 'px';
+   leaf.style.top = value * -1.5 + 'px';
+   leaf.style.left = value * 1.5 + 'px';
+   hill5.style.left = value * 1.5 + 'px';
+   hill4.style.left = value * -1.5 + 'px';
+   hill1.style.top = value * 1 + 'px';
+   
+});
+         </script>
+</body>  
+
+</html>
